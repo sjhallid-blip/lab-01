@@ -14,13 +14,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.sam.petshop.ui.theme.PetShopTheme
 
 class MainActivity : ComponentActivity() {
-    val cat = Cat("Coco",6)
-    val dog = Dog("Mochi", 6)
-    val scorpion = Scorpion("Stinger", 32)
-    val pettablePets = mutableListOf<Pettable>(cat, dog)
-    val pets = mutableListOf(cat, dog, scorpion)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        val cat = Cat("Coco",6)
+        val dog = Dog("Mochi", 6)
+        val scorpion = Scorpion("Stinger", 32)
+        val pets = mutableListOf(cat, dog, scorpion)
+        val pettablePets = mutableListOf<Pettable>(cat, dog)
     }
 }
